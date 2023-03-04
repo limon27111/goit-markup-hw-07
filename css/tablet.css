@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 766px;
+    }
+    .section-one-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .section-one-list {
+        gap: 24px;
+        row-gap: 72px;
+    }
+    .section-title {
+        text-align: left;
+    }
+
+    .team > .container {
+        max-width: 582px;
+    }
+    .team-list {
+        gap: 24px;
+        row-gap: 64px;
+    }
+   .all-team {
+    width: calc((100% - 24px) / 2);
+   } 
+
+   .customers > .container {
+    max-width: 582px;
+}
+    .company-li {
+        width: calc((100% - 32px) / 3);
+    }
+}

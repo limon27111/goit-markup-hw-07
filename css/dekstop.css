@@ -1,0 +1,39 @@
+@media screen and (max-width: 1200px) {
+    .section-one-icon {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .section-one-item {
+        width: calc((100% - 72px) / 4)
+    }
+    .section-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .section-one-text {
+        font-weight: 400;
+    }
+
+    .team > .container {
+        max-width: 1200px;
+    }
+    .all-team {
+        width: calc((100% - 72px) / 4);
+       } 
+
+    .customers > .container {
+        max-width: 1200px;
+    }
+    .company-li {
+        width: calc((100% - 80px) / 6);
+    }
+}
