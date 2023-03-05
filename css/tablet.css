@@ -2,6 +2,38 @@
     .container {
         max-width: 766px;
     }
+
+    .hero {
+        padding: 112px 136px;
+        background-color: var(--hero-bg-color);
+        background-image: linear-gradient(rgba(46,47,66,0.7), 
+    rgba(46,47,66,0.7)
+    ),
+    url("../images/tablet-hero.jpg");
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46,47,66,0.7), 
+    rgba(46,47,66,0.7)
+    ),
+    url("../images/tablet-hero-2x.jpg");
+  }
+}
+
+    .header-content {
+        width: 496px;
+    }
+
+    .hero-title {
+        margin-bottom: 40px;
+        font-size: 56px;
+        line-height: 60px;
+    }
+
     .section-one-item {
         width: calc((100% - 24px) / 2);
     }

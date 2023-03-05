@@ -34,7 +34,6 @@ img {
 }
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -155,32 +154,42 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .hero {
     background-color: var(--hero-bg-color);
     text-align: center;
-    padding: 188px 0;
+    padding: 112px 0px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
-    height: 600px;
     border: 1px solid var(--btn-text-color-active);
     background-image: linear-gradient(rgba(46,47,66,0.7), 
     rgba(46,47,66,0.7)
     ),
-    url("../images/hero.jpg");
+    url("../images/mobile-hero.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46,47,66,0.7), 
+    rgba(46,47,66,0.7)
+    ),
+    url("../images/mobile-hero-2x.jpg");
+  }
+}
 .header-content {
-    width: 496px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .hero-title {
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     color:  #FFFFFF;
 font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
+font-size: 36px;
+line-height: 40px;
 text-align: center;
 }
 .button {
@@ -195,7 +204,7 @@ text-align: center;
     font-family: Roboto;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.5;
+line-height: 24px;
 cursor: pointer;
 
 transition-property: background-color, box-shadow, color, border;
@@ -233,16 +242,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 }
 .section-one-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 112px;
-    margin-bottom: 8px;
-    background-color: var(--btn-bg-color);
-}
-.section-one-svg {
-    width: 64px;
-    height: 64px;
+    display: none;
 }
 .section-title {
     margin-top: 0;
@@ -261,30 +261,8 @@ font-size: 16px;
 line-height: 24px;
 }
 .doing {
-    padding-top: 0;
-    padding-bottom: 120px;
+    display: none;
 } 
-.doing-list {
-    display: flex;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-}
-.doing-list img{
-    display: block;
-}
-.last-picture img {
-    margin-right: 0;
-}
-.section-two-title {
-    margin-top: 0;
-    margin-bottom: 72px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    text-transform: capitalize;
-}
 .team-list {
     display: flex;
     flex-wrap: wrap;
