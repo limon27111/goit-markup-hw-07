@@ -3,14 +3,14 @@
         max-width: 1200px;
     }
 
-
     .hero {
-        padding: 188px 472px;
+        padding: 188px 0;
         background-color: var(--hero-bg-color);
         background-image: linear-gradient(rgba(46,47,66,0.7), 
     rgba(46,47,66,0.7)
     ),
     url("../images/dekstop-hero.jpg");
+    
     }
 
     @media (min-device-pixel-ratio: 2),
