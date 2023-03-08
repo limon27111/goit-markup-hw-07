@@ -2,9 +2,9 @@
     .container {
         max-width: 766px;
     }
-    
     .site-nav .link {
         display: block;
+        position: relative;
         padding-top: 24px;
         padding-bottom: 24px;
         
@@ -23,7 +23,7 @@
         margin: 0;
         gap: 40px;
         display: flex;
-        margin-left: 76px;
+        margin-left: 120px;
     }
     .site-nav.item {
         position: relative;
@@ -65,35 +65,48 @@
     }
 
     .address-nav .address-link {
+        display: block;
         color: var(--second-text-color);
     font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.1;
     text-decoration: none;
+   padding: 0;
+   margin: 0;
     }
     address {
         margin-left: auto;
     }
     .address-nav {
         display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
         padding: 0;
         margin-left: auto;
         margin: 0;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        justify-content: flex-end;
     }
-    .address-nav .item + .item{
-        margin-left: 40px;
+    .address-nav.item {
+margin-top: 0;
+margin-bottom: 0;
     }
     .address-nav :hover, 
     .address-nav :focus {
         color: var(--btn-bg-color-active);
     }
     .address-link {
+        margin: 0;
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    .menu-open {
+        display: none;
+    }
 
     .hero {
         padding: 112px 136px;
@@ -153,5 +166,46 @@
 }
     .company-li {
         width: calc((100% - 32px) / 3);
+    }
+    .footer > .container {
+        max-width: 582px;
+    }
+    .foot-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .logo-foot {
+        align-items: normal;
+        margin: 0;
+    }
+    .footer-text {
+        margin-top: 0;
+        width: 264px;
+    }
+    .foot-social {
+        flex-direction: column;
+        justify-content: start;
+        margin: 0;
+    }
+    .social-text {
+        text-align: start;
+    }
+    .foot-sub {
+        margin: 0;
+    }
+    .footer-title-input {
+        text-align: start;
+    }
+    .footer-input-list {
+        display: flex;
+        gap: 24px;
+    }
+    .footer-input {
+        width: 264px;
+        margin: 0;
+    }
+    .button-footer-send {
+        margin: 0;
     }
 }

@@ -3,6 +3,23 @@
         max-width: 1200px;
     }
 
+    .site-nav-list {
+        margin-left: 76px;
+    }
+    .address-nav {
+        gap: 40px;
+        align-items: center;
+        padding-top: 0;
+        margin-top: 0;
+        
+    }
+    .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
     .hero {
         padding: 188px 0;
         background-color: var(--hero-bg-color);
@@ -96,5 +113,23 @@
     }
     .company-li {
         width: calc((100% - 80px) / 6);
+    }
+    .footer > .container {
+        max-width: 1200px;
+    }
+    .footer {
+        padding: 100px 0;
+    }
+    .foot-container {
+        flex-wrap: nowrap;
+        gap: 0;
+        align-items: center;
+    }
+    .foot-social {
+        margin-left: 120px;
+        margin-right: 80px;
+    }
+    .social-text {
+        margin-top: 0;
     }
 }
